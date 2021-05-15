@@ -22,4 +22,8 @@ fun main () {
 
     cosa--
     println("el valor de cosa decrementado es: $cosa")
+
+    println("el valor de cosa es ${cosa++}") // incremento post-fijo: con esto el sistema primero printea el valor original y luego incrementa
+    println("el valor de cosa es ${++cosa}") // incremento post-fijo: primero incrementa y luego imprime el importe
+    println(cosa)
 }
