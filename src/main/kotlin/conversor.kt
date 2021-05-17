@@ -2,7 +2,7 @@
 
 fun main (){
 
-ejercicio3()
+ejercicio4()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -26,7 +26,7 @@ fun ejercicio2(){
     var grs= readLine()?.toFloat()
     var lbs = grs?.div(453.59)
     println("los gramos ingresados equivalen a $lbs libras")
-    } */
+    }
 
 //Convertir de micrómetros a nanómetros, sabiendo que 1microm = 1000nm
 
@@ -35,4 +35,13 @@ fun ejercicio3(){
     var microm= readLine()?.toFloat()
     var nm = microm?.div(1000)
     println("los micrómetros ingresados equivalen a ${nm} nanómetros")
+}
+*/
+// Convertir de Galones a barriles, sabiendo que 1barril = 34,97galones
+
+fun ejercicio4(){
+    println("ingresa los galones a convertir: ")
+    var gal= readLine()?.toFloat()
+    var barr= gal?.div(34.97)
+    println("${gal} equivalen a ${barr} barriles")
 }
