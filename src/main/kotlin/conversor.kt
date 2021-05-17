@@ -26,4 +26,4 @@ fun ejercicio2(){
     var grs= readLine()?.toFloat()
     var lbs = grs?.div(453.59)
     println("los gramos ingresados equivalen a $lbs libras")
-    } 
+    }
