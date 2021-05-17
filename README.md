@@ -1,4 +1,4 @@
-## Ejercicios programación estrucuturada
+## Ejercicios programación estructurada
 
 
 ### Conversores 
