@@ -1,11 +1,12 @@
-// Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
+
 
 fun main (){
-ejercicio1()
 
+ejercicio2()
 }
+// Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
-fun ejercicio1(){
+/* fun ejercicio1(){
     println("ingrese el valor en metros a convertir en kilómetros: ")
     var valEnM = readLine()?.toFloat()
     var valEnKm = valEnM?.div(1000)
@@ -16,4 +17,13 @@ fun ejercicio1(){
      valEnKm = valEnM?.div(1000)  me tira error?
      */
    println("el valor en kilómetros es : ${valEnKm}")
-}
+}*/
+
+//Ingresar un cantidad en Gramos y transformar a Libras, sabiendo que 1lb = 453.59g
+
+fun ejercicio2(){
+    println("ingrese los gramos que desea trasnformar: ")
+    var grs= readLine()?.toFloat()
+    var lbs = grs?.div(453.59)
+    println("los gramos ingresados equivalen a $lbs libras")
+    } 
