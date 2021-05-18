@@ -1,7 +1,7 @@
 import kotlin.math.round
 
 fun main (){
-ejercicio9()
+ejercicio10()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -89,7 +89,7 @@ fun ejercicio8() {
     var area = altura?.let { base?.times(it)?.div(2) }
     println("el área de tu triángulo es: ${area}")
 }
-*/
+
 
 //Calcular el Área de un rectángulo, dado sus lados
 
@@ -100,5 +100,26 @@ fun ejercicio9(){
     var base = readLine()?.toInt()
     var area = base?.let { altura?.times(it) }
     println("el área de tu rectángulo es: ${area}")
+}
+*/
+
+//Calcular el Area de un circulo, dado su diametro
+
+fun ejercicio10(){
+println("ingresa el díámetro de tu círculo")
+    var dia= readLine()?.toFloat()
+
+    //primera opción: área es igual a diámetro (radio al cuadrado) por valor pi
+
+    val pi= 3.14f
+    var area= dia?.times(pi)
+    println("el área de tu círculo es ${area}")
+
+    //segunda opción: área es igual a radio por valor pi y el resultado de esto elevado al cuadrado
+
+    dia= dia?.div(2)
+    area= dia?.times(pi)
+    area= dia?.times(dia)
+    println("2do resultado: ${area}") //No estoy segura de cuál de los dos es, pero ninguno me da como el resultado de un converter que busqué en internet :'c
 }
 
