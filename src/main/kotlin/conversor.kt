@@ -1,7 +1,7 @@
 import kotlin.math.round
 
 fun main (){
-ejercicio7()
+ejercicio8()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -68,7 +68,7 @@ fun ejercicio6(){
     euros = euros?.let { round(it) }
     println("serían un total de ${pesos} argentinos o ${euros} euros") //le puse el round porque si no, tiraba un número decimal interminable
 }
- */
+
 //Ingresar un valor en grados Celsius y convertir a grados Fahrenheit
 
 fun ejercicio7(){
@@ -77,3 +77,16 @@ fun ejercicio7(){
     var fahr= celcius?.times(1.8)?.plus(32)
     println("los ${celcius} grados Celcius equivalen a ${fahr} grados Fahrenheit")
 }
+*/
+
+//Calcular el Área de un triángulo, dada su altura y su base
+
+fun ejercicio8() {
+    println("ingresa la altura del triángulo: ")
+    var altura = readLine()?.toInt()
+    println("ingresa la base del triángulo: ")
+    var base = readLine()?.toInt()
+    var area = altura?.let { base?.times(it)?.div(2) }
+    println("el área de tu triángulo es: ${area}")
+}
+
