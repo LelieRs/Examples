@@ -43,3 +43,18 @@
  
  ### Bucles
 
+1. Dada una palabra que la muestre por consola 10 veces.
+2. pPreguntar al usuario su edad y mostrar por consola todos los años que ha cumplido (desde 1 hasta su edad).
+3. Pedir al usuario un número entero positivo y muestrar por consola todos los números impares desde 1 hasta ese número separados por comas.
+4. Pedir al usuario un número entero positivo y muestrar por pantalla la cuenta atrás desde ese número hasta cero separados por comas.
+5. Mostrar por consola las tablas de multiplicar del 1 al 10.
+6. Almacenar una cadena de caracteres contraseña en una variable, preguntar al usuario por la contraseña una y otra vez hasta que introduzca la contraseña correcta.
+7. Pedir al usuario una palabra y luego mostrar por pantalla una a una las letras de la palabra introducida empezando por la última.
+8. Preguntar e al usuario por una frase y una letra, y muestrar por pantalla el número de veces que aparece la letra en la frase.
+9. Pedir al usuario un número entero y mostrar por pantalla un triángulo rectángulo como el de más abajo, usando como altura el número recibido.
+*
+**
+***
+****
+*****
+10. Desarrollar una función que reciba por parametro una cantidad a invertir, el interés anual y el número de años, y muestre por consola el capital obtenido en la inversión cada año que dura la inversión. el cálculo: es el dinero invertido sumando año a año el interes porcentual anual (interés/100).

@@ -1,11 +1,11 @@
 import kotlin.math.round
 
-fun main (){
-ejercicio10()
+fun main() {
+    ejercicio10()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
-/* fun ejercicio1(){
+fun ejercicio1() {
     println("ingrese el valor en metros a convertir en kilómetros: ")
     var valEnM = readLine()?.toFloat()
     var valEnKm = valEnM?.div(1000)
@@ -15,66 +15,66 @@ ejercicio10()
      var valEnKm = 0
      valEnKm = valEnM?.div(1000)  me tira error?
      */
-   println("el valor en kilómetros es : ${valEnKm}")
+    println("el valor en kilómetros es : ${valEnKm}")
 }
 
 //Ingresar un cantidad en Gramos y transformar a Libras, sabiendo que 1lb = 453.59g
 
-fun ejercicio2(){
+fun ejercicio2() {
     println("ingrese los gramos que desea trasnformar: ")
-    var grs= readLine()?.toFloat()
+    var grs = readLine()?.toFloat()
     var lbs = grs?.div(453.59)
     println("los gramos ingresados equivalen a $lbs libras")
-    }
+}
 
 //Convertir de micrómetros a nanómetros, sabiendo que 1microm = 1000nm
 
-fun ejercicio3(){
+fun ejercicio3() {
     println("¿cuántos micrómetros deseas convertir? ")
-    var microm= readLine()?.toFloat()
+    var microm = readLine()?.toFloat()
     var nm = microm?.div(1000)
     println("los micrómetros ingresados equivalen a ${nm} nanómetros")
 }
 
 // Convertir de Galones a barriles, sabiendo que 1barril = 34,97galones
 
-fun ejercicio4(){
+fun ejercicio4() {
     println("ingresa los galones a convertir: ")
-    var gal= readLine()?.toFloat()
-    var barr= gal?.div(34.97)
+    var gal = readLine()?.toFloat()
+    var barr = gal?.div(34.97)
     println("${gal} equivalen a ${barr} barriles")
 }
 
 //Convertir de metros a: Kilómetros, centímetros y decímetros, sabiendo que 1Km=10000dm y 1dm=10cm.
 
-fun ejercicio5(){
-    println("ingresa los metros a convertir:" )
-    var m= readLine()?.toDouble()
-    var km= m?.div(1000)
-    var cm= m?.times(100)
-    var dm= m?.times(10)
+fun ejercicio5() {
+    println("ingresa los metros a convertir:")
+    var m = readLine()?.toDouble()
+    var km = m?.div(1000)
+    var cm = m?.times(100)
+    var dm = m?.times(10)
     println("los metros ingresados equivalen a ${km} kilómetros, ${cm} centímetros y ${dm} decímetros")
 }
 
 
 //Ingresar un valor en Dólares y convertir a Pesos argentinos, y Euros.
 
-fun ejercicio6(){
+fun ejercicio6() {
     println("ingresa la cantidad de dólares a convertir:")
-    var dolar= readLine()?.toFloat()
-    var pesos= dolar?.times(94.07)
-    pesos= pesos?.let { round(it) }
-    var euros= dolar?.div(1.22)
+    var dolar = readLine()?.toFloat()
+    var pesos = dolar?.times(94.07)
+    pesos = pesos?.let { round(it) }
+    var euros = dolar?.div(1.22)
     euros = euros?.let { round(it) }
     println("serían un total de ${pesos} argentinos o ${euros} euros") //le puse el round porque si no, tiraba un número decimal interminable
 }
 
 //Ingresar un valor en grados Celsius y convertir a grados Fahrenheit
 
-fun ejercicio7(){
+fun ejercicio7() {
     print("ingresa el valor a convertir a Fahrenheit: ")
-    var celcius= readLine()?.toFloat()
-    var fahr= celcius?.times(1.8)?.plus(32)
+    var celcius = readLine()?.toFloat()
+    var fahr = celcius?.times(1.8)?.plus(32)
     println("los ${celcius} grados Celcius equivalen a ${fahr} grados Fahrenheit")
 }
 
@@ -93,7 +93,7 @@ fun ejercicio8() {
 
 //Calcular el Área de un rectángulo, dado sus lados
 
-fun ejercicio9(){
+fun ejercicio9() {
     println("ingresa la altura del cuadrado: ")
     var altura = readLine()?.toInt()
     println("ingresa la base del cuadrado: ")
@@ -101,25 +101,24 @@ fun ejercicio9(){
     var area = base?.let { altura?.times(it) }
     println("el área de tu rectángulo es: ${area}")
 }
-*/
 
 //Calcular el Area de un circulo, dado su diametro
 
-fun ejercicio10(){
-println("ingresa el díámetro de tu círculo")
-    var dia= readLine()?.toFloat()
+fun ejercicio10() {
+    println("ingresa el díámetro de tu círculo")
+    var dia = readLine()?.toFloat()
 
     //primera opción: área es igual a diámetro (radio al cuadrado) por valor pi
 
-    val pi= 3.14f
-    var area= dia?.times(pi)
+    val pi = 3.14f
+    var area = dia?.times(pi)
     println("el área de tu círculo es ${area}")
 
     //segunda opción: área es igual a radio por valor pi y el resultado de esto elevado al cuadrado
 
-    dia= dia?.div(2)
-    area= dia?.times(pi)
-    area= dia?.times(dia)
+    dia = dia?.div(2)
+    area = dia?.times(pi)
+    area = dia?.times(dia)
     println("2do resultado: ${area}") //No estoy segura de cuál de los dos es, pero ninguno me da como el resultado de un converter que busqué en internet :'c
 }
 
