@@ -1,8 +1,8 @@
-
+import kotlin.math.round
 
 fun main (){
 
-ejercicio5()
+ejercicio6()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -44,7 +44,7 @@ fun ejercicio4(){
     var gal= readLine()?.toFloat()
     var barr= gal?.div(34.97)
     println("${gal} equivalen a ${barr} barriles")
-} */
+}
 
 //Convertir de metros a: Kilómetros, centímetros y decímetros, sabiendo que 1Km=10000dm y 1dm=10cm.
 
@@ -55,4 +55,17 @@ fun ejercicio5(){
     var cm= m?.times(100)
     var dm= m?.times(10)
     println("los metros ingresados equivalen a ${km} kilómetros, ${cm} centímetros y ${dm} decímetros")
+}
+*/
+
+//Ingresar un valor en Dólares y convertir a Pesos argentinos, y Euros.
+
+fun ejercicio6(){
+    println("ingresa la cantidad de dólares a convertir:")
+    var dolar= readLine()?.toFloat()
+    var pesos= dolar?.times(94.07)
+    pesos= pesos?.let { round(it) }
+    var euros= dolar?.div(1.22)
+    euros = euros?.let { round(it) }
+    println("serían un total de ${pesos} argentinos o ${euros} euros") //le puse el round porque si no, tiraba un número decimal interminable
 }
