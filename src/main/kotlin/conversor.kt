@@ -2,7 +2,7 @@
 
 fun main (){
 
-ejercicio4()
+ejercicio5()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -36,7 +36,7 @@ fun ejercicio3(){
     var nm = microm?.div(1000)
     println("los micrómetros ingresados equivalen a ${nm} nanómetros")
 }
-*/
+
 // Convertir de Galones a barriles, sabiendo que 1barril = 34,97galones
 
 fun ejercicio4(){
@@ -44,4 +44,15 @@ fun ejercicio4(){
     var gal= readLine()?.toFloat()
     var barr= gal?.div(34.97)
     println("${gal} equivalen a ${barr} barriles")
+} */
+
+//Convertir de metros a: Kilómetros, centímetros y decímetros, sabiendo que 1Km=10000dm y 1dm=10cm.
+
+fun ejercicio5(){
+    println("ingresa los metros a convertir:" )
+    var m= readLine()?.toDouble()
+    var km= m?.div(1000)
+    var cm= m?.times(100)
+    var dm= m?.times(10)
+    println("los metros ingresados equivalen a ${km} kilómetros, ${cm} centímetros y ${dm} decímetros")
 }
