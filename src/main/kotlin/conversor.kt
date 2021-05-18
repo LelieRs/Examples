@@ -1,8 +1,7 @@
 import kotlin.math.round
 
 fun main (){
-
-ejercicio6()
+ejercicio7()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -56,7 +55,7 @@ fun ejercicio5(){
     var dm= m?.times(10)
     println("los metros ingresados equivalen a ${km} kilómetros, ${cm} centímetros y ${dm} decímetros")
 }
-*/
+
 
 //Ingresar un valor en Dólares y convertir a Pesos argentinos, y Euros.
 
@@ -68,4 +67,13 @@ fun ejercicio6(){
     var euros= dolar?.div(1.22)
     euros = euros?.let { round(it) }
     println("serían un total de ${pesos} argentinos o ${euros} euros") //le puse el round porque si no, tiraba un número decimal interminable
+}
+ */
+//Ingresar un valor en grados Celsius y convertir a grados Fahrenheit
+
+fun ejercicio7(){
+    print("ingresa el valor a convertir a Fahrenheit: ")
+    var celcius= readLine()?.toFloat()
+    var fahr= celcius?.times(1.8)?.plus(32)
+    println("los ${celcius} grados Celcius equivalen a ${fahr} grados Fahrenheit")
 }
