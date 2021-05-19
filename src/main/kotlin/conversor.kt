@@ -2,7 +2,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio11()
+    ejercicio11_2()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -165,5 +165,50 @@ fun ejercicio11(){
         println("quedando ${pesos} pesos.")
     }
 }
+fun ejercicio11_2(){
+    println("inserta la cantidad de pesos a deglosar: ")
+    var pesos = readLine()?.toInt()
+    var restante: Int
 
+    if (pesos!= null) {
+        if (pesos >= 1000) {
+            restante = pesos / 1000
+            print("se necesitan ${restante} billetes de 1000, ")
+            pesos %= 1000
+
+        }
+        if (pesos >= 500) {
+            restante = pesos / 500
+            print("${restante} billetes de 500, ")
+            pesos %= 500
+        }
+        if (pesos >= 100) {
+            restante = pesos / 100
+            print("${restante} billetes de 100, ")
+            pesos %= 100
+        }
+        if (pesos >= 50) {
+            restante = pesos / 50
+            print("${restante} billetes de 50, ")
+            pesos %= 50
+        }
+        if (pesos >= 20) {
+            restante = pesos / 20
+            print("${restante} billetes de 20, ")
+            pesos %= 20
+        }
+        if (pesos >= 10) {
+            restante = pesos / 10
+            print("${restante} monedas de 10, ")
+            pesos %= 10
+        }
+        if (pesos >= 5) {
+            restante = pesos / 5
+            print("y ${restante} monedas de 5, ")
+            pesos %= 5
+
+        }
+    }
+    println("quedando ${pesos} pesos.")
+}
 
