@@ -1,7 +1,7 @@
 import kotlin.math.round
 
 fun main (){
-ejercicio10()
+ejercicio11()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -101,7 +101,7 @@ fun ejercicio9(){
     var area = base?.let { altura?.times(it) }
     println("el área de tu rectángulo es: ${area}")
 }
-*/
+
 
 //Calcular el Area de un circulo, dado su diametro
 
@@ -122,4 +122,49 @@ println("ingresa el díámetro de tu círculo")
     area= dia?.times(dia)
     println("2do resultado: ${area}") //No estoy segura de cuál de los dos es, pero ninguno me da como el resultado de un converter que busqué en internet :'c
 }
+*/
+//Ingresar una cantidad en pesos y desglosar el número de billetes de 5,10, 20, 50, 100, 500, 1000, informar el resto si corresponde.
+fun ejercicio11(){
+    println("ingresa la cantidad de pesos: ")
+    var pesos: Int= 5688
+    var restante: Int
+
+    if (pesos>=1000){
+        restante= pesos/1000
+        print ("se necesitan ${restante} billetes de 1000, ")
+        pesos %= 1000
+    }
+    if (pesos>=500){
+        restante= pesos/500
+        print ("${restante} billetes de 500, ")
+        pesos %= 500
+    }
+    if (pesos>=100){
+        restante= pesos/100
+        print ("${restante} billetes de 100, ")
+        pesos %= 100
+    }
+    if (pesos>=50){
+        restante= pesos/50
+        print ("${restante} billetes de 50, ")
+        pesos %= 50
+    }
+    if (pesos>=20){
+        restante= pesos/20
+        print ("${restante} billetes de 20, ")
+        pesos %= 20
+    }
+    if (pesos>=10){
+        restante= pesos/10
+        print ("${restante} monedas de 10, ")
+        pesos %= 10
+    }
+    if (pesos>=5){
+        restante= pesos/5
+        print ("y ${restante} monedas de 5, ")
+        pesos %= 5
+        println("quedando ${pesos} pesos.")
+    }
+}
+
 
