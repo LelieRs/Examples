@@ -1,8 +1,10 @@
+import kotlin.math.PI
+import kotlin.math.pow
 import kotlin.math.round
 
 
 fun main () {
-    ejercicio11_2()
+    ejercicio10()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -107,20 +109,11 @@ fun ejercicio9() {
 
 fun ejercicio10() {
     println("ingresa el díámetro de tu círculo")
-    var dia = readLine()?.toFloat()
-
-    //primera opción: área es igual a diámetro (radio al cuadrado) por valor pi
-
-    val pi = 3.14f
-    var area = dia?.times(pi)
-    println("el área de tu círculo es ${area}")
-
-    //segunda opción: área es igual a radio por valor pi y el resultado de esto elevado al cuadrado
-
-    dia = dia?.div(2)
-    area = dia?.times(pi)
-    area = dia?.times(dia)
-    println("2do resultado: ${area}") //No estoy segura de cuál de los dos es, pero ninguno me da como el resultado de un converter que busqué en internet :'c
+    var diametro = readLine()?.toFloat()
+    var pi = 3.14f
+    var radio = diametro?.div(2)?.pow(2)
+    var area = radio?.times(pi)
+    println("el área de tu círculo es $area")
 }
 
 //Ingresar una cantidad en pesos y desglosar el número de billetes de 5,10, 20, 50, 100, 500, 1000, informar el resto si corresponde.
@@ -211,4 +204,9 @@ fun ejercicio11_2(){
     }
     println("quedando ${pesos} pesos.")
 }
+//Ingresar un número y verificar si es múltiplo de 10
 
+fun ejercicio12(){
+
+
+}
