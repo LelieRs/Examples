@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio12()
+    ejercicio13()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -175,6 +175,16 @@ fun ejercicio12() {
     } else
         println("el $multiploDiez no es múltiplo de 10")
 }
+/* Crear una función que calcule el valor de elevar un número 'A', a un exponente entero 'B', 'A' elevado a 'B'
+(multiplicando b veces el número a) por ej 2 elevado a la 3 debe devolver 8
+ */
+fun ejercicio13(){
+    println("ingresa el primer número: ")
+    var primerValor = readLine()?.toInt()
+    println("ingresa el segundo valor ")
+    var segundoValor = readLine()?.toInt()
+    val resultado = primerValor?.let { segundoValor?.let { it1 -> Math.pow(it.toDouble(), it1.toDouble()) } }
+    println("el número $primerValor elevado a $segundoValor es igual a: $resultado")
 
-
+}
 
