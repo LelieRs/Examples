@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio13()
+    ejercicio14(50)
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -188,3 +188,10 @@ fun ejercicio13(){
 
 }
 
+//Generar 5,10,15,20,25,30,35...n, donde n se pasa por parametro
+
+fun ejercicio14(valor: Int){
+    for (i in 0..valor step 5){
+        println ("$i ")
+    }
+}
