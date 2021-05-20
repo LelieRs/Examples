@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio14(50)
+    ejercicio19()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -196,4 +196,64 @@ fun ejercicio14(valor: Int){
     }
 }
 
-//
+//Función que pida números de cuatro cifras e indique si los números son capicúas o no.
+
+fun ejercicio15(){
+    println("ingresa un número de 4 cifras: ")
+    val numero= readLine()?.toInt()
+    //val numeroInvertido = numero.reverse()
+        }
+
+
+//Ingresar una lista de n números y sacar su promedio.
+
+fun ejercicio16(){
+
+}
+
+//ESTRUCTURAS DE DECISIÓN
+
+//Ingrese dos números y mostrar el número mayor.
+
+fun ejercicio17(){
+    println("ingresa un número: ")
+    var primerNumero= readLine()?.toInt()
+        println("ingresa el número a comparar: ")
+    var segundoNumero= readLine()?.toInt()
+
+    if (primerNumero != null && segundoNumero != null) {
+        if (primerNumero>segundoNumero){
+            println("el número mayor es $primerNumero")
+        }else
+            println("el número mayor es $segundoNumero")
+    }
+}
+//Ingresar tres números y mostrar el número intermedio.
+fun ejercicio18(){
+    println("ingresa un número: ")
+    var primerNumero= readLine()?.toInt()
+    println("ingresa el segundo número: ")
+    var segundoNumero= readLine()?.toInt()
+    println("ingresa el tercer número: ")
+    var tercerNumero= readLine()?.toInt()
+
+    if (primerNumero != null && segundoNumero != null && tercerNumero != null) {
+        if (primerNumero>segundoNumero && primerNumero<tercerNumero || primerNumero<segundoNumero && primerNumero>tercerNumero){
+            print("el $primerNumero es el número intermedio")
+        }else if (segundoNumero>primerNumero && segundoNumero<tercerNumero || segundoNumero<primerNumero && segundoNumero>tercerNumero){
+            print("el $segundoNumero es el número intermedio")
+        }else if (tercerNumero>primerNumero && tercerNumero<segundoNumero || tercerNumero<primerNumero && tercerNumero>segundoNumero) {
+            println("el $tercerNumero es el número intermedio")
+        }else
+            println("na, dale. Dejate de j*der y coloca bien los números.")
+    }
+}
+//Ingresar tres números y ordenar (de forma ascendente y descendente) y mostrar el resultado
+
+fun ejercicio19(){
+    var lista= arrayListOf(2, 9, 6)
+    lista.sort()
+    println(lista)
+    lista.sortDescending()
+    println(lista)
+}
