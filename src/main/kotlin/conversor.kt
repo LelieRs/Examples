@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio16()
+    ejercicio20()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -285,3 +285,16 @@ fun ejercicio19(){
         println("la lista ordenada de manera asendiente sería: $lista")
     }
 }
+//Verificar si un número es par o impar
+fun ejercicio20(){
+    val divisor= 2
+    println("ingresa un número: ")
+    val nro= readLine()?.toInt()
+
+    if (nro != null) {
+        if (nro % divisor == 0){
+            println("el número $nro es par")
+        } else
+            println("el número $nro es impar")
+        }
+    }
