@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio19()
+    ejercicio15()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -199,11 +199,19 @@ fun ejercicio14(valor: Int){
 //Función que pida números de cuatro cifras e indique si los números son capicúas o no.
 
 fun ejercicio15(){
-    println("ingresa un número de 4 cifras: ")
-    val numero= readLine()?.toInt()
-    //val numeroInvertido = numero.reverse()
+    println("ingrese un número de 4 cifras a evaluar: ")
+    var numeros= readLine()
+    var numerosReverse = ""
+    if (numeros != null) {
+        for (numero in numeros.length -1 downTo 0) {
+            numerosReverse = numerosReverse + numeros[numero]
         }
-
+    }
+    if (numeros==numerosReverse){
+        println("los numeros ingresados son capicúa")
+    }else
+        println("los números ingresados no son capicúa")
+   }
 
 //Ingresar una lista de n números y sacar su promedio.
 
@@ -256,4 +264,7 @@ fun ejercicio19(){
     println(lista)
     lista.sortDescending()
     println(lista)
+}
+fun ejercicio19_1(){
+//ejercicio 19 por mejorar
 }
