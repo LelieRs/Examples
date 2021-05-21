@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio20()
+    ejercicio21()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -298,3 +298,16 @@ fun ejercicio20(){
             println("el número $nro es impar")
         }
     }
+//Saber si un número es divisible por otro número entero
+fun ejercicio21(){
+    println("ingresa el primer número: ")
+    val nro1= readLine()?.toInt()
+    println("ingresa el segundo número: ")
+    val nro2= readLine()?.toInt()
+    if (nro1 != null && nro2 != null){
+        if(nro1 % nro2 == 0){
+            println("los números $nro1 y $nro2 son divisibles")
+        }else
+            println("los números $nro1 y $nro2 no son divisibles")
+    }
+}
