@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio19()
+    ejercicio16()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -216,7 +216,15 @@ fun ejercicio15(){
 //Ingresar una lista de n números y sacar su promedio.
 
 fun ejercicio16(){
-
+    var lista= mutableListOf(20, 15, 30,90)
+    println(lista.average())
+    // o
+    var list= listOf(20.0, 15.0, 30.0, 90.0)
+    var prom = 0.0
+    for (i in list){
+        prom= list.sum()/list.size
+    }
+    println(prom)
 }
 
 //ESTRUCTURAS DE DECISIÓN
