@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio15()
+    ejercicio19()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -259,12 +259,21 @@ fun ejercicio18(){
 //Ingresar tres números y ordenar (de forma ascendente y descendente) y mostrar el resultado
 
 fun ejercicio19(){
-    var lista= arrayListOf(2, 9, 6)
-    lista.sort()
-    println(lista)
-    lista.sortDescending()
-    println(lista)
-}
-fun ejercicio19_1(){
-//ejercicio 19 por mejorar
+    var lista= mutableListOf(0)
+    println("ingresa primer número: ")
+    var numero1 = readLine()?.toInt()
+    println("ingresa segundo número: ")
+    var numero2 = readLine()?.toInt()
+    println("ingresa tercer número: ")
+    var numero3 = readLine()?.toInt()
+    if (numero1 != null && numero2 != null && numero3 != null) {
+        lista.add(numero1)
+        lista.add(numero2)
+        lista.add(numero3)
+        lista.removeAt(0)
+        lista.sort()
+        println("la lista ordenada de manera asendiente sería: $lista")
+        lista.sortDescending()
+        println("la lista ordenada de manera asendiente sería: $lista")
+    }
 }
