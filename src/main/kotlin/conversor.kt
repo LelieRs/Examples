@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio26()
+    ejercicio25()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -346,7 +346,24 @@ fun ejercicio24(){
 }
 //Ingresar año, mes y día actual, e ingresar año, mes y día de nacimiento y calcular la edad con años, meses y días.
 fun ejercicio25(){
+    println("ingresa el año de tu nacimiento: ")
+    var añoNac= readLine()?.toInt()
+    println("ingresa el mes de tu nacimiento: ")
+    var mesNac= readLine()?.toInt()
+    println("ingresa el día de tu nacimiento: ")
+    var diaNac= readLine()?.toInt()
+    println("ingresa el año actual: ")
+    var añoActual= readLine()?.toInt()
+    println("ingresa el mes actual: ")
+    var mesActual= readLine()?.toInt()
+    println("ingresa el día actual: ")
+    var diaActual= readLine()?.toInt()
 
+    if (mesActual != null) {
+        if (diaActual != null) {
+            println("tienes ${añoActual!! - añoNac!!} años con ${mesActual- mesNac!!} meses y ${diaActual- diaNac!!} días")
+        }
+    }
 }
 //Dada una palabra que la muestre por consola 10 veces.
 fun ejercicio26(){
