@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio21()
+    ejercicio22()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -309,5 +309,20 @@ fun ejercicio21(){
             println("los números $nro1 y $nro2 son divisibles")
         }else
             println("los números $nro1 y $nro2 no son divisibles")
+    }
+}
+//Verificar si un número es positivo o negativo o es cero
+fun ejercicio22(){
+    println("ingresa un número: ")
+    var num= readLine()?.toInt()
+    if (num!= null){
+        if (num>0){
+            println("el número ingresado es positivo")
+        }else if (num==0){
+            println("el número ingresado es cero")
+        }else if (num<0){
+            println("el número ingresado es negativo")
+        }else
+            println("por favor, ingresa un número válido")
     }
 }
