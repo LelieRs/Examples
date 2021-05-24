@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio22()
+    ejercicio23()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -325,4 +325,19 @@ fun ejercicio22(){
         }else
             println("por favor, ingresa un número válido")
     }
+}
+//Ingresar una calificación (01 – 10) y calificar con la siguiente equivalencia. 9 y 10 Sobresaliente 7 y 8 Muy Buena 6 Buena 4 y 5 Regular 2 y 3 Mal 1 Volve a tu casa
+fun ejercicio23(){
+    println("Del 1 al 10, indicá tu calificación: ")
+    val calificacion= readLine()?.toInt()
+    when(calificacion){
+        1 -> println("Volvé a tu casa")
+        2,3 -> println("Mal")
+        4,5 -> println("Regular")
+        6 -> println("Buena")
+        7,8 -> println("Muy Buena")
+        9,10 -> println("volvé a tu casa")
+        else -> println("El número ingresado es incorrecto.")
+    }
+
 }
