@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio25()
+    ejercicio27()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -374,4 +374,13 @@ fun ejercicio26(){
             println(palabra)
         }
     }
+}
+//Preguntar al usuario su edad y mostrar por consola todos los años que ha cumplido (desde 1 hasta su edad).
+fun ejercicio27(){
+    println("ingresa tu edad: ")
+    var edad= readLine()?.toInt()
+    for (i in 1..edad!!){
+        println("has cumplido "+ i + " años")
+    }
+
 }
