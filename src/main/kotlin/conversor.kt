@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio23()
+    ejercicio26()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -339,5 +339,22 @@ fun ejercicio23(){
         9,10 -> println("volvé a tu casa")
         else -> println("El número ingresado es incorrecto.")
     }
+}
+//Ingresar un número (de hasta 3 cifras) y mostrar su equivalente en números romanos.
+fun ejercicio24(){
 
+}
+//Ingresar año, mes y día actual, e ingresar año, mes y día de nacimiento y calcular la edad con años, meses y días.
+fun ejercicio25(){
+
+}
+//Dada una palabra que la muestre por consola 10 veces.
+fun ejercicio26(){
+    println("escribe una palabra: ")
+    var palabra = readLine()?.toString()
+    if (palabra != null) {
+        for (i in 1..10){
+            println(palabra)
+        }
+    }
 }
