@@ -423,5 +423,17 @@ fun ejercicio31() {
     }
     println("contraseña aceptada.")
 }
+//Pedir al usuario una palabra y luego mostrar por pantalla una a una las letras de la palabra introducida empezando por la última.
+fun ejercicio32(){
+    println("ingresa una palabra: ")
+    var palabra= readLine()
+    var list= ""
 
+    if (palabra != null) {
+        for (letra in palabra.length -1 downTo 0) {
+            list = list + palabra[letra]+"\n"
+        }
+    }
+    println(list)
+}
 
