@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio27()
+    ejercicio28()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -337,7 +337,7 @@ fun ejercicio23(){
         6 -> println("Buena")
         7,8 -> println("Muy Buena")
         9,10 -> println("volvé a tu casa")
-        else -> println("El número ingresado es incorrecto.")
+        else -> println("El número ingresado está fuera del rango informado.")
     }
 }
 //Ingresar un número (de hasta 3 cifras) y mostrar su equivalente en números romanos.
@@ -382,5 +382,13 @@ fun ejercicio27(){
     for (i in 1..edad!!){
         println("has cumplido "+ i + " años")
     }
-
+}
+/*Pedir al usuario un número entero positivo y muestrar por consola todos los números impares desde 1 hasta
+ese número separados por comas.*/
+fun ejercicio28(){
+    println("ingresa un número entero: ")
+    val num= readLine()?.toInt()
+    for (i in 1..num!! step 2) {
+        print("$i, ")
+    }
 }
