@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio30()
+    ejercicio32()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -404,31 +404,24 @@ print("ingresa un número: ")
 }
 //Mostrar por consola las tablas de multiplicar del 1 al 10.
 fun ejercicio30() {
-    println("ingresa un número del 1 al 10: ")
-    val num = readLine()?.toInt()
-    if (num != null) {
-        when (num) {
-            1 -> for (i in num..10) {
-                println("1x$i=${i * 1}")}
-            2 -> for (i in num..10){
-                println("2x$i= ${i * 2}")}
-            3 -> for (i in num..10){
-                println("3x$i= ${i * 3}")}
-            4 -> for (i in num..10){
-                println("4x$i= ${i * 4}")}
-            5 -> for (i in num..10){
-                println("5x$i= ${i * 5}")}
-            6 -> for (i in num..10){
-                println("6x$i= ${i * 6}")}
-            7 -> for (i in num..10){
-                println("7x$i= ${i * 7}")}
-            8 -> for (i in num..10){
-                println("8x$i= ${i * 8}")}
-            9 -> for (i in num..10){
-                println("9x$i= ${i * 9}")}
-            10 -> for (i in num..10){
-                println("10x$i= ${i * 10}")}
-            else -> println("número ingresado fuera del rango informado.")
-        }
+    for (i in 1..10){
+        for (j in 1..10){
+            println("$i x $j= ${i*j}")
+           }
+        println("")
     }
 }
+//Almacenar una cadena de caracteres contraseña en una variable, preguntar al usuario por la contraseña una y otra vez hasta que introduzca la contraseña correcta.
+fun ejercicio31() {
+    println("ingresa tu contraseña: ")
+    var password= "supercalifragilisticoespialidoso"
+    var input= readLine()
+
+    while (input != password){
+        println("contraseña incorrecta, intenta nuevamente: ")
+        input= readLine()
+    }
+    println("contraseña aceptada.")
+}
+
+
