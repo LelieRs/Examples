@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio28()
+    ejercicio29()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -390,5 +390,15 @@ fun ejercicio28(){
     val num= readLine()?.toInt()
     for (i in 1..num!! step 2) {
         print("$i, ")
+    }
+}
+//Pedir al usuario un número entero positivo y muestrar por pantalla la cuenta atrás desde ese número hasta cero separados por comas.
+fun ejercicio29(){
+print("ingresa un número: ")
+    val num= readLine()?.toInt()
+    if (num != null) {
+        for(i in num downTo 0){
+            print("$i, ")
+        }
     }
 }
