@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio29()
+    ejercicio30()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -399,6 +399,36 @@ print("ingresa un número: ")
     if (num != null) {
         for(i in num downTo 0){
             print("$i, ")
+        }
+    }
+}
+//Mostrar por consola las tablas de multiplicar del 1 al 10.
+fun ejercicio30() {
+    println("ingresa un número del 1 al 10: ")
+    val num = readLine()?.toInt()
+    if (num != null) {
+        when (num) {
+            1 -> for (i in num..10) {
+                println("1x$i=${i * 1}")}
+            2 -> for (i in num..10){
+                println("2x$i= ${i * 2}")}
+            3 -> for (i in num..10){
+                println("3x$i= ${i * 3}")}
+            4 -> for (i in num..10){
+                println("4x$i= ${i * 4}")}
+            5 -> for (i in num..10){
+                println("5x$i= ${i * 5}")}
+            6 -> for (i in num..10){
+                println("6x$i= ${i * 6}")}
+            7 -> for (i in num..10){
+                println("7x$i= ${i * 7}")}
+            8 -> for (i in num..10){
+                println("8x$i= ${i * 8}")}
+            9 -> for (i in num..10){
+                println("9x$i= ${i * 9}")}
+            10 -> for (i in num..10){
+                println("10x$i= ${i * 10}")}
+            else -> println("número ingresado fuera del rango informado.")
         }
     }
 }
