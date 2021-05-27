@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio33()
+    ejercicio34()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -449,7 +449,18 @@ fun ejercicio33() {
         }
         println("la letra $letra se encuentra $sumaLetra veces en la frase ingresada")
 }
-
-
+//Pedir al usuario un número entero y mostrar por pantalla un triángulo rectángulo como el de más abajo, usando como altura el número recibido.
+fun ejercicio34() {
+    println("ingresa un número: ")
+    var contador = readLine()?.toInt()
+    if (contador != null) {
+        for (numero in 1..contador){
+            for(i in 1..numero){
+                print("* ")
+            }
+            println()
+        }
+    }
+}
 
 
