@@ -4,7 +4,7 @@ import kotlin.math.round
 
 
 fun main () {
-    ejercicio32()
+    ejercicio33()
 }
 // Ingresar una cantidad en metros y convertir a kilómetros, sabiendo que 1km=1000m
 
@@ -436,4 +436,20 @@ fun ejercicio32(){
     }
     println(list)
 }
+//Preguntar al usuario por una frase y una letra, y muestrar por pantalla el número de veces que aparece la letra en la frase.
+fun ejercicio33() {
+    println("ingresa una frase: ")
+    var frase = readLine()
+    println("ingresa una letra: ")
+    var letra = readLine()
+    var sumaLetra = 0
+        for (i in frase!!) {
+            if (letra.equals(i.toString()))
+                sumaLetra++
+        }
+        println("la letra $letra se encuentra $sumaLetra veces en la frase ingresada")
+}
+
+
+
 
